@@ -70,6 +70,8 @@ fi
 
 # Get and Build dependencies
 bash build_deps_all.sh
+# get go build dependencies
+bash libs/get_source.sh
 
 cd "$nPath/build"
 cmake -GNinja -DCMAKE_BUILD_TYPE=Release -DNKR_PACKAGE_MACOS=1 ..
